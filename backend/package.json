@@ -1,0 +1,57 @@
+{
+  "name": "backend",
+  "version": "1.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --use-strict --watch src ./src/app.js",
+    "debug": "nodemon --use-strict --watch src --inspect ./src/app.js",
+    "test": "jest",
+    "style:check": "eslint --color --quiet --fix ./src"
+  },
+  "author": "Elena Shchekina",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "core-util-is": "^1.0.3",
+    "http-status-codes": "^2.2.0",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-passport": "^4.1.4",
+    "koa-pino-logger": "^4.0.0",
+    "koa-Router": "^1.0.5",
+    "koa-session": "^6.2.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.35",
+    "module-alias": "^2.2.2",
+    "node-fetch": "^3.2.3",
+    "passport-local": "^1.0.0",
+    "pino": "^6.6.1",
+    "pino-multi-stream": "^6.0.0",
+    "pino-pretty": "^7.6.1",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-koa": "^2.0.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "npm-check-updates": "^9.0.2",
+    "prettier": "^2.1.2"
+  },
+  "_moduleAliases": {
+    "@root": "./src"
+  }
+}
