@@ -13,7 +13,7 @@ router.get('/', (ctx, next) => {
 });
 
 router.use('/todos', todos.routes());
-// router.use('/auth', auth.routes());
+router.use('/auth', auth.routes());
 router.use('/users', users.routes());
 router.use('/characteristics', characteristics.routes());
 router.use('/objects', objects.routes());

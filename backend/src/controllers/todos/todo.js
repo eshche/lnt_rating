@@ -12,7 +12,7 @@ module.exports = async (ctx, next) => {
     const normalizedId = Number.parseInt(id);
     const data = await getById(normalizedId);
     //  console.log({data});
-    ctx.log.info('user received todo');
+    //ctx.log.info('user received todo');
     ctx.set('ContentType', mime.contentType('json'));
     ctx.body = JSON.stringify(data);
   } else {

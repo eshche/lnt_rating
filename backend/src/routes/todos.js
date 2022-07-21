@@ -5,15 +5,7 @@ const { todo, todoList } = require('@root/controllers/todos');
 
 const router = new Router();
 
-router.get('/', todoList);
+router.get('/', isAuthenticated, todoList);
 router.get('/:id', todo);
-
-
-router.get('/', (ctx, next) => {
-  next();
-}, isAuthenticated, (ctx, next) => {
-  ctx.body = 'todos list';
-  next();
-});
 
 module.exports = router;
